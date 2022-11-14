@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* overrides to tailwind, applies to all pages */
+
+:root {
+  --code-bg: rgba(27, 31, 35, 0.07);
+  --dcp-orange: #db691b;
+  --dcp-orange-dark: #833E10;
+  --dcp-orange-light: #FBEFE8;
+  --contrast-blue: #287bd9;
+  --contrast-blue-darker: #246fc3;
+  --contrast-blue-darkest: #08192b;
+  --white: rgba(255, 255, 255, 1);
+  --transparent-white: rgba(255, 255, 255, 0);
+}
+
+.gradient-bg {
+  background: linear-gradient(var(--transparent-white) 0%, var(--white) 25%);
+}
+
+.gradient-bg-sm {
+  background: linear-gradient(var(--transparent-white) 0%, var(--white) 75%);
+}
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+body {
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+p, ul, ol {
+  color: var(--contrast-blue-darker);
+  margin-bottom: 1.15rem;
+}
+
+/* clear bottom margin on paragraphs and lists 
+that are children of other lists + list items */
+
+li p {
+  margin-bottom: 0;
+}
+
+li ul {
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--contrast-blue-darkest);
+  margin: 2.75rem 0 1.05rem;
+  font-weight: bold;
+  line-height: 1.15;
+}
+
+code {
+  background: var(--code-bg);
+  font-size: 85%;
+  border-radius: 6px;
+  padding-left: 0.125em;
+  padding-right: 0.125em;
+}
+
+.title {
+  color: var(--contrast-blue-darker);
+  padding: 0.25em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-left: -0.5em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--contrast-blue-darkest);
+}
+
+.a-active {
+  text-decoration: underline;
+}
+
+#article-column a {
+  color: var(--contrast-blue-darker);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0.125em;
+  font-size: 2em;
+}
+
+h2 {font-size: 1.602em;}
+
+h3 {font-size: 1.424em;}
+
+h4 {font-size: 1.266em;}
+
+h5 {font-size: 1.125em;}
+
+small, .text_small {font-size: 0.889em;}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 1em;
+}
+
+ul {
+  list-style-type: circle;
+  padding-left: 1em;
+}
+
+#article-column img {
+  margin-bottom: 1em;
+}
+
+#article-column p, 
+#article-column ul, 
+#article-column ol, 
+#article-column h1, 
+#article-column h2, 
+#article-column h3,
+#article-column h4,
+#article-column h5 {
+  color: var(--contrast-blue-darkest);
+}
+
+#nav-column :nth-child(1) {
+  margin-top: 0em;
+}
+
+#article-column :nth-child(1) {
+  margin-top: 0em;
+}
+
+video {
+  padding-bottom: 1em;
+}
+
+/* MERMAID DIAGRAMS */
+
+div .mermaid {
+  position: relative; 
+  height: 0; 
+  width: 100%; 
+  padding: 0;
+  padding-bottom: 100%; 
+  margin-bottom: 1em;
+}
+
+svg[id^='mermaid-']{
+  position: absolute; 
+  height: 100%; 
+  width: 100%; 
+  left: 0; 
+  top: 0;
+}
+
+tspan {
+  font-family: Arial, Helvetica, sans-serif !important;
+  fill: var(--contrast-blue-darker) !important;
+}
+
+.flowchart-link, path {
+  stroke: var(--contrast-blue-darker) !important;
+}
+
+marker {
+  fill: var(--contrast-blue-darker) !important;
+}
+
+.node rect { 
+  fill: white !important;
+  stroke: var(--contrast-blue-darker) !important;
+}
+
+/* SLIDE TABLE */
+
+.slide-table table {
+  font-size: 0.75em;
+}
+
+.slide-table code {
+  background: none;
+  color: black;
+}
+
+.slide-table th {
+  text-align: left;
+}
+
+.slide-table td {
+  padding-right: 2em;
+}

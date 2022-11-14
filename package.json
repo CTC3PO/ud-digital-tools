@@ -1,0 +1,75 @@
+{
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Carsten Rodin <carsten.rodin@gmail.com>",
+  "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "date-fns": "^2.16.1",
+    "drei": "^1.5.7",
+    "gatsby": "^2.28.2",
+    "gatsby-image": "^2.7.0",
+    "gatsby-plugin-catch-links": "^2.6.0",
+    "gatsby-plugin-layout": "^1.6.0",
+    "gatsby-plugin-manifest": "^2.8.0",
+    "gatsby-plugin-mdx": "^1.6.0",
+    "gatsby-plugin-netlify-cms": "^4.10.0",
+    "gatsby-plugin-offline": "^3.6.0",
+    "gatsby-plugin-page-creator": "^2.6.0",
+    "gatsby-plugin-postcss": "^2.3.13",
+    "gatsby-plugin-react-helmet": "^3.6.0",
+    "gatsby-plugin-sharp": "^2.10.1",
+    "gatsby-plugin-styled-jsx": "^3.6.0",
+    "gatsby-remark-copy-linked-files": "^2.6.0",
+    "gatsby-remark-images": "^3.7.1",
+    "gatsby-remark-mermaid": "^2.1.0",
+    "gatsby-remark-unwrap-images": "^1.0.2",
+    "gatsby-source-filesystem": "^2.7.0",
+    "gatsby-transformer-remark": "^2.12.0",
+    "gatsby-transformer-sharp": "^2.8.0",
+    "jsdom": "^16.4.0",
+    "netlify-cms-app": "^2.14.25",
+    "npm": "^9.1.1",
+    "prop-types": "^15.7.2",
+    "puppeteer": "^5.5.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-helmet": "^6.1.0",
+    "react-spring": "^8.0.27",
+    "react-swipeable": "^5.5.1",
+    "react-three-fiber": "^4.2.21",
+    "react-transition-group": "^4.4.1",
+    "styled-jsx": "^3.3.2",
+    "three": "^0.120.1",
+    "xmldom": "^0.3.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0",
+    "mdx-deck": "^4.1.1",
+    "prettier": "2.0.5",
+    "tailwindcss": "^1.9.6"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop -p 8001",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
